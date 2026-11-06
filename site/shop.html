@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boutique — Beni Paris</title>
+<meta name="description" content="Shop Beni Paris: tailored coats, silk shirts, trousers and cashmere accessories from our Paris atelier.">
+<link rel="icon" href="/img/bp.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="shop">
+<main id="main">
+  <header class="page-head">
+    <p class="kicker" id="shop-kicker">Beni Paris · Online boutique</p>
+    <h1 id="shop-title">La Boutique</h1>
+    <p id="shop-desc">Browse every piece from the house — tailoring, silk and cashmere, made in Paris.</p>
+  </header>
+  <section class="shop">
+    <div class="cat-tabs" id="tabs" role="group" aria-label="Collections"></div>
+    <div class="toolbar">
+      <div class="left">
+        <span id="count"></span>
+        <button type="button" class="link" id="filter-toggle" aria-expanded="false" aria-controls="filters">Filter</button>
+        <button type="button" class="link" id="clear" hidden>Clear all</button>
+      </div>
+      <div class="left">
+        <input type="search" id="search" placeholder="Search pieces" aria-label="Search pieces" maxlength="100">
+        <label>Sort <select id="sort" aria-label="Sort"></select></label>
+      </div>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div id="results"></div>
+    <div class="more"><button type="button" class="btn" id="more" hidden>Show more pieces</button></div>
+  </section>
+</main>
+<script type="module" src="/js/shop.js"></script>
+</body>
+</html>
